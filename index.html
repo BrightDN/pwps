@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+
+    <script src="https://unpkg.com/pdfmake@0.3/build/pdfmake.min.js"></script>
+    <script src="https://unpkg.com/pdfmake@0.3/build/vfs_fonts.js"></script>
+    <script defer src="assets/scripts/script.js"></script>
+
+    <title>PromoStudio</title>
+</head>
+<body>
+    <section>
+        <h1>Promokaart</h1>
+        <h2>Layout</h2>
+            <label>
+                Formaat:
+                <select name="formaat">
+                    <option value="A5" selected>Klein</option>
+                    <option value="A4">A4 blad</option>
+                    <option value="A3">Groot</option>
+                </select>
+            </label>
+        <h2>Product informatie</h2>
+
+            <label>
+                Merk:
+                <input type="text" name="merk" placeholder="bv: Delhaize">
+            </label>
+
+            <label>
+                Product: 
+                <input type="text" name="product" placeholder="bv: Ontbijtgranen">
+            </label>
+
+            <label>
+                Specificatie:
+                <input type="text" name="specificatie" placeholder="bv: Van 400g tot 1kg">
+            </label>
+
+        <h2>Promotie informatie</h2>
+
+        <label>
+            Promotietekst (eerste rij)
+            <input type="text" name="promotietekst_groot" placeholder="bv: 2+2">
+        </label>
+        <label>
+            Promotietekst (2de rij)
+            <input type="text" name="promotietekst_groot2" placeholder="bv: 2+2">
+        </label>
+
+        <label>
+            Promotietekst (onderste rij)
+            <input type="text" name="promotietekst_klein" placeholder="bv: naar keuze">
+        </label>
+    </section>
+
+    <div class="iFrameContainer">
+
+    </div>
+
+    </iframe>
+</body>
+</html>

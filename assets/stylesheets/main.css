@@ -1,0 +1,21 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+section>* {
+    display: block;
+    text-align: center;
+}
+
+.iFrameContainer, iframe{
+    height: 100vh;
+    width: 100%;
+}

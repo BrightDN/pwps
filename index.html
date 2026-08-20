@@ -67,7 +67,11 @@
 </dialog>
 
     <script>
-        document.querySelector("dialog").showModal()
+        const modal = document.querySelector("dialog")
+            modal.showModal()
+            dialog.addEventListener('keydown', (event) => {
+              if (event.key === 'Escape') event.preventDefault();
+            });
     </script>
 </body>
 </html>
